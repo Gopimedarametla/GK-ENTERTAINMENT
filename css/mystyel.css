@@ -1,0 +1,52 @@
+body
+{
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    
+}
+/*    TELUGU MOVIES BUTTON*/
+.my-button{
+    height: 50px;
+    font-size: 15px;
+    font-family: bold;
+    background-color: red;
+    color: yellow;
+    border: 2px solid yellow;
+    text-align: right;
+    right: 80%;
+}
+
+header
+{
+background-color: #000;
+    padding: 18px;
+    box-shadow: 0 0 3px #fff;
+    
+}
+header li
+{
+    display: inline;
+    padding-left: 45px;
+    
+}
+header li a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 13px;
+    transition: .3s ease;
+}
+header li a:hover
+{
+color: yellow;
+    
+}
+header li img
+{
+    width: 135px;
+    float: left;
+    margin-top: -20px;
+}
