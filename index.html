@@ -2,39 +2,96 @@
     <html lang="en">
 
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/mystyel.css">
-    <title>GKET</title>
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/mystyel.css">
+        <title>GKET</title>
+    </head>
 
-<body>
-  
-    <header>
-        <ul>
-            <li><img src="images/logo/WhatsApp%20Image%202023-05-22%20at%201.02.33%20PM.jpeg" alt="logo"></li>
+    <body>
 
-            <li>
-                <a href="#">HOME</a>
-            </li>
-            <li>  
-                <a href="#">TELUGU MOVIES</a>
-            </li>
-            <li>
-                <a href="#">TELUGU LIVE TV</a>
-            </li>
-            <li>
-                <a href="#">SPORTS LIVE(TELUGU)</a>
-            </li>
-        </ul>
+        <header>
+            <ul>
+                <li><img src="images/logo/WhatsApp%20Image%202023-05-22%20at%201.02.33%20PM.jpeg" alt="logo"></li>
 
-    </header><br>
-    <div>
-     <button class="my-button" onclick="location.href='https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202015%20Movies/Bahubali%20(2015)%20Telugu%20BluRay/Bahubali%20Telugu%20BluRay%20Single%20Part.mp4'">TELUGU MOVIES</button>
-     </div><br>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">TELUGU MOVIES</a>
+                </li>
+                <li>
+                    <a href="#">TELUGU LIVE TV</a>
+                </li>
+                <li>
+                    <a href="#">SPORTS LIVE(TELUGU)</a>
+                </li>
+            </ul>
+
+        </header><br>
+        <div>
+            <button class="my-button" onclick="location.href='https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202015%20Movies/Bahubali%20(2015)%20Telugu%20BluRay/Bahubali%20Telugu%20BluRay%20Single%20Part.mp4'">TELUGU MOVIES</button>
+        </div>
+        <br>
+        <div>
+           <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202015%20Movies/Bahubali%20(2015)%20Telugu%20BluRay/Bahubali%20Telugu%20BluRay%20Single%20Part.mp4"><img src="images/logo/bahubali_143685159750.jpg" width="200px" height="200px" /><br>bahubali 1</a>
+            
+               <br>
+                <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202023%20Movies/Virupaksha%20(2023)%20Telugu%20Original%20HDRip/Virupaksha%20Telugu%20Original%20HDRip%20Single%20Part/Virupaksha%20(2023)%20Telugu%20Original%20HDRip%20Single%20Part.mp4"><img src="images/logo/images.jpg" width="200px" height="200px" /><br>virupaksha movie</a>
+                    <br>
+                    <br>
+
      <div>
-     <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202015%20Movies/Bahubali%20(2015)%20Telugu%20BluRay/Bahubali%20Telugu%20BluRay%20Single%20Part.mp4"><img src="images/logo/bahubali_143685159750.jpg" width="200px" height="200px"/><br>bahubali 1</a><b</div><br>
-     <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202023%20Movies/Virupaksha%20(2023)%20Telugu%20Original%20HDRip/Virupaksha%20Telugu%20Original%20HDRip%20Single%20Part/Virupaksha%20(2023)%20Telugu%20Original%20HDRip%20Single%20Part.mp4"><img src="images/logo/images.jpg" width="200px" height="200px"/><br>virupaksha movie</a><b</div>
-    
-</body></html>
+            <button class="my-button">TELUGU LIVE TV</button>
+
+
+        </div><br>
+
+        <!--ZEENEWS LIVE TV(TELUGU)-->
+
+        <html>
+
+        <head>
+            <title>MHDTVWORLD.ME | Watch Your Favourite Indian TV Channels Anytime Anywher</title>
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            <meta http-equiv="Expires" content="0" />
+            <meta content="never" name="referrer">
+            <link rel="stylesheet" type="text/css" href="/players/clap.css">
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+        </head>
+
+        <body>
+            <div id="player"></div>
+            <script>
+                var playerElement = document.getElementById("player");
+                var player = new Clappr.Player({
+                    mimeType: "application/x-mpegURL",
+                    mediacontrol: {
+                        seekbar: "#ff0000",
+                        buttons: "#ffffff"
+                    },
+                    height: "40%",
+                    width: "35%",
+                    autoPlay: true,
+                    mute: false,
+                    plugins: {
+                        'core': [LevelSelector]
+                    },
+                });
+                player.attachTo(playerElement);
+                player.load({
+                    source: 'https://news-live-cfgroup.zee5.com/out/v1/e26eac6c51b14f74a3468cb77ae4d9c4/index.m3u8',
+                    mimeType: 'application/vnd.apple.mpegurl'
+                });
+                player.play();
+
+            </script>
+        </body>
+        </html>
+        <!--   MAA TV HD LIVE TV(TELUGU)-->
+    </body>
+
+    </html>
