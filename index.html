@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="js/myscript.js"></script>
+
         <link rel="stylesheet" href="css/mystyel.css">
         <title>GKET</title>
 
@@ -41,7 +42,7 @@
             <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202015 %20Movies/Bahubali%20(2015)%20Telugu%20BluRay/Bahubali%20Telugu%20BluRay%20Single%20Part.mp4"><img src="images/logo/bahubali_143685159750.jpg" width="200px" height="200px" /><br>bahubali 1</a>
         </div>
         <br>
-        <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202023%20Movies/Virupaksha%20(2023)%20Telugu%20Original%20HDRip/Virupaksha%20Telugu%20Original%20HDRip%20Single%20Part/Virupaksha%20(2023)%20Telugu%20Original%20HDRip%20Single%20Part.mp4"><img src="images/logo/images.jpg" width="200px" height="200px" /><br>virupaksha movie</a>
+        <a href="https://www.jiorockers.space/files/Telugu%20Movies/Telugu%202023%20Movies/Virupaksha%20(2023)%20Telugu%20Original%20HDRip/Virupaksha%20Telugu%20Original%20HDRip%20Single%20Part/Virupaksha%20(2023)%20Telugu%20Original%20HDRip%20Single%20Part.mp4"><img src="images/logo/virupaksha-et00346626-1681729599.avif" width="200px" height="200px" /><br>virupaksha movie</a>
         <br>
         <br>
         <div>
@@ -54,109 +55,39 @@
         <!-- zee cinema telugu live-->
 
         <text class="gopigk">Zee Cinema Live Telugu</text><br>
+        <!DOCTYPE html>
+        <br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play .m3u8 File in HTML5 video player</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-         <html>
 
-        <head>
+        <!-- Create a video element <-->
+        
+        <video id="video" controls></video>
 
-            <title>MHDTVWORLD.ME | Watch Your Favourite Indian TV Channels Anytime Anywher</title>
-            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-            <meta http-equiv="Pragma" content="no-cache" />
-            <meta http-equiv="Expires" content="0" />
-            <meta content="never" name="referrer">
-            <link rel="stylesheet" type="text/css" href="/players/clap.css">
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
-
-        </head>
-
-        <body>
-
-            <div id="player"></div>
-            <script>
-                var playerElement = document.getElementById("player");
-                var player = new Clappr.Player({
-                    mimeType: "application/x-mpegURL",
-                    mediacontrol: {
-                        seekbar: "#ff0000",
-                        buttons: "#ffffff"
-                    },
-                    height: "20%",
-                    width: "20%",
-                    autoPlay: true,
-                    mute: false,
-                    plugins: {
-                        'core': [LevelSelector]
-                    },
+        <!-- Use hls.js to create a player and load the .m3u8 file -->
+        <script>
+            var video = document.getElementById('video');
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource('https://cflive-esports-hindi.zee5.com/out/v1/32b5d7e9a9144c6ab822dc10a77bfafc/Zee_Cinemalu_HD/index.m3u8');
+                hls.attachMedia(video);
+                video.play();
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = 'https://cflive-esports-hindi.zee5.com/out/v1/32b5d7e9a9144c6ab822dc10a77bfafc/Zee_Cinemalu_HD/index.m3u8';
+                video.addEventListener('loadedmetadata', function() {
+                    video.play();
                 });
+            }
 
-
-                player.attachTo(playerElement);
-                player.load({
-                    source: 'https://cflive-esports-hindi.zee5.com/out/v1/32b5d7e9a9144c6ab822dc10a77bfafc/Zee_Cinemalu_HD/index.m3u8',
-                    mimeType: 'application/vnd.apple.mpegurl'
-                });
-                player.play();
-
-            </script>
-
-        </body>
-
-        </html>
-
-      
-
-
-        <!--        zee news live telugu-->
-
-        <html>
-
-        <head>
-
-            <title>MHDTVWORLD.ME | Watch Your Favourite Indian TV Channels Anytime Anywher</title>
-            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-            <meta http-equiv="Pragma" content="no-cache" />
-            <meta http-equiv="Expires" content="0" />
-            <meta content="never" name="referrer">
-            <link rel="stylesheet" type="text/css" href="/players/clap.css">
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
-
-        </head>
-
-        <body>
-
-            <div id="player"></div>
-            <script>
-                var playerElement = document.getElementById("player");
-                var player = new Clappr.Player({
-                    mimeType: "application/x-mpegURL",
-                    mediacontrol: {
-                        seekbar: "#ff0000",
-                        buttons: "#ffffff"
-                    },
-                    height: "20%",
-                    width: "20%",
-                    autoPlay: true,
-                    mute: false,
-                    plugins: {
-                        'core': [LevelSelector]
-                    },
-                });
-
-
-                player.attachTo(playerElement);
-                player.load({
-                    source: 'https://news-live-cfgroup.zee5.com/out/v1/e26eac6c51b14f74a3468cb77ae4d9c4/index.m3u8',
-                    mimeType: 'application/vnd.apple.mpegurl'
-                });
-                player.play();
-
-            </script>
-
-        </body>
-
-        </html>
+        </script>
 
 
 
