@@ -101,12 +101,12 @@
   var video = document.getElementById('video2');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://z5ak-cmaflive.zee5.com/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8?hdnts=st=1684844121~exp=1684847121~acl=/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8*~hmac=71af710efda5349eada8d5b2841e5c0ed34d40acce1a0fe1179044c02823e179');
+    hls.loadSource('https://z5ak-cmaflive.zee5.com/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8?hdnts=st=1684846900~exp=1684849900~acl=/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8*~hmac=277ee2124ab75a83a39a4fda9b985b191d85e6faab9a5debe2b25c53ee83cedf');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://z5ak-cmaflive.zee5.com/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8?hdnts=st=1684844121~exp=1684847121~acl=/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8*~hmac=71af710efda5349eada8d5b2841e5c0ed34d40acce1a0fe1179044c02823e179';
+    video.src = 'https://z5ak-cmaflive.zee5.com/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8?hdnts=st=1684846900~exp=1684849900~acl=/out/v1/97e5f9c5e9e14e0db56aa12e013608f8/Zee_telugu/index-connected.m3u8*~hmac=277ee2124ab75a83a39a4fda9b985b191d85e6faab9a5debe2b25c53ee83cedf';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
