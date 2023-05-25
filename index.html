@@ -78,11 +78,11 @@
         var video = document.getElementById('video');
         if (Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource('https://cflive-esports-hindi.zee5.com/out/v1/32b5d7e9a9144c6ab822dc10a77bfafc/Zee_Cinemalu_HD/index.m3u8');
+            hls.loadSource('https://z5ak-cmaflive.zee5.com/out/v1/326675470d6041efb042fd43bca649d1/Zee_Cinemalu_HD/index-connected.m3u8?hdnts=st=1684989561~exp=1684992561~acl=/out/v1/326675470d6041efb042fd43bca649d1/Zee_Cinemalu_HD/index-connected.m3u8*~hmac=3f801d5a21b4b986003179929e6f6c4089c066de600e86e7e81bb58530fc0a2a');
             hls.attachMedia(video);
             video.play();
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = 'https://cflive-esports-hindi.zee5.com/out/v1/32b5d7e9a9144c6ab822dc10a77bfafc/Zee_Cinemalu_HD/index.m3u8';
+            video.src = 'https://z5ak-cmaflive.zee5.com/out/v1/326675470d6041efb042fd43bca649d1/Zee_Cinemalu_HD/index-connected.m3u8?hdnts=st=1684989561~exp=1684992561~acl=/out/v1/326675470d6041efb042fd43bca649d1/Zee_Cinemalu_HD/index-connected.m3u8*~hmac=3f801d5a21b4b986003179929e6f6c4089c066de600e86e7e81bb58530fc0a2a';
             video.addEventListener('loadedmetadata', function() {
                 video.play();
             });
